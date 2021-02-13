@@ -51,4 +51,19 @@ li {
         display: flex;
         justify-content: space-between;
     }
+
+    .post__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .post__img {
+        height: 50px;
+        margin: 0 auto;
+    }
+
+    .post__desc {
+        min-width: 70%;
+    }
 }
