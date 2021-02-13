@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Shop</title>
 </head>
 <body>
 
-    <div class="wrapper">
+    
         <header class="header">
             <div class="container">
                 <div class="header__body">
-                    <button class="header__burger"><span>---</span></button>
+                    <button class="header__burger"><img class="header__burger-img" src="./img/menu.svg" alt="menu"></button>
                 
                     <!-- <nav class="header__menu  menu">
                         <ul class="menu__list">
@@ -39,12 +40,12 @@
                         </ul>
                     </nav> -->
                     <h1 class="header__logo"><a class="logo">логотип</a></h1>
-                    <button class="header__search">search</button>
+                    <button class="header__search"><img class="header__search-img" src="./img/search.svg" alt="поиск" /></button>
                 </div>
             </div>
         </header>
 
-        <main>
+        <main class="wrap">
             <section class="top-category">
                 <div class="container">
                     <div class="top-category__body">
@@ -165,8 +166,17 @@
                     </div>
                 </div> -->
             </section>
+
+            <section class="menu-bottom">
+                <ul class="menu-bottom__list">
+                    <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Главная</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Каталог</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Корзина</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Избранное</a></li>
+                    <li class="menu-bottom__item"><a class="menu-bottom__link" href="#">Войти</a></li>
+                </ul>
+            </section>
         </main> 
-    </div>
 
   
     <script src="./js/main.js"></script>

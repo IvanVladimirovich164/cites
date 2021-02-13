@@ -2,7 +2,14 @@
 
 let array = [{name: "Ноутбук ASUS Zenbook", article: 1235212, price: 250000, photo: './img/photo.jpg'}, 
             {name: "Ноутбук Samsung", article: 99999, price: 520000, photo: './img/photo.jpg'}, 
-            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'}];
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
+            {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},];
 
 function createPost(arr) {
     
