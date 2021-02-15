@@ -1,6 +1,6 @@
 'use strict'
 
-let array = [{name: "Ноутбук ASUS Zenbook", article: 1235212, price: 250000, photo: './img/photo.jpg'}, 
+let arrayProducts = [{name: "Ноутбук ASUS Zenbook", article: 1235212, price: 250000, photo: './img/photo.jpg'}, 
             {name: "Ноутбук Samsung", article: 99999, price: 520000, photo: './img/photo.jpg'}, 
             {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
             {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
@@ -11,12 +11,14 @@ let array = [{name: "Ноутбук ASUS Zenbook", article: 1235212, price: 2500
             {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},
             {name: "Ноутбук HP", article: 12212, price: 252200, photo: './img/photo.jpg'},];
 
-function createPost(arr) {
-    
+let getProductsList = document.querySelector('.products__list');
+
+let productItem = ``; 
+
+function generateProducts(arr) {
     arr.forEach(el => {
-        document.querySelector('.posts__list').innerHTML += `
-        <div class="post">
-            <div class="container">
+        productItem += `<div class="post">
+                <div class="container">
                 <div class="post__body">
                     <img class="post__img" src="${el.photo}" alt="${el.name}"/>
                     <div class="post__desc">
@@ -29,11 +31,13 @@ function createPost(arr) {
             </div> 
         </div>
         <hr>
-      
-            `        
+        `
     });
-    
-};
+}
 
+function addProducts(items, parent){
+    parent.insertAdjacentHTML("afterend", items)
+}
 
-createPost(array);
+generateProducts(arrayProducts);
+addProducts(productItem, getProductsList);
